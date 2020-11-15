@@ -5,16 +5,10 @@
 
 <div class="container-cards">
   <div class="row">
-
       <% @cocktails.each do |cocktail| %>
         <div class="card-category col-6 col-md-4 mr-auto" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(<%= image_path("mojito.jpg")  %>)">
           <%= link_to cocktail.name, cocktail  %>
         </div>
       <% end %>
-
-
   </div>
 </div>
-
-
-
